@@ -22,7 +22,7 @@ let inherity = function(mainConfig){
 
     if(opts.chunk.type!="deleted"){
       configLanguage[opts.language].dependencies = {}
-      configLanguage[opts.language] = dependencies.createDependencies(configLanguage[opts.language])
+      configLanguage[opts.language]              = dependencies.createDependencies(configLanguage[opts.language])
     }
 
     let lisView = dependencies.listDependencies(opts.chunk.path, configLanguage[opts.language]);
