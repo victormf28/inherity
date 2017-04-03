@@ -20,7 +20,7 @@ let inherity = function(mainConfig){
   
   let getListDependencies = (opts)=>{
 
-    if(! opts.chunk.type=="deleted"){
+    if(opts.chunk.type!="deleted"){
       configLanguage[opts.language].dependencies = {}
       configLanguage[opts.language] = dependencies.createDependencies(configLanguage[opts.language])
     }
