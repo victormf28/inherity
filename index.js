@@ -1,14 +1,13 @@
 // 'use strict';
 
-var fs              = require('fs')
-var pathNode        = require("path")
-var glob            = require("glob")
+let fs              = require('fs'),
+    pathNode        = require("path"),
+    glob            = require("glob"),
 
-var cleanComments   = require("./cleanComment") 
-var util            = require("./util")
-var configLanguage  = require("./configLanguage")
-var dependencies    = require("./dependencies")
-
+    cleanComments   = require("./cleanComment"),
+    util            = require("./util"),
+    configLanguage  = require("./configLanguage"),
+    dependencies    = require("./dependencies");
 
 
 
